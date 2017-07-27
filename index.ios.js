@@ -8,8 +8,8 @@ import AlbumList from './src/components/AlbumList';
 // Create a component
 const App = () => {
     return (
-        <View>
-            <Header headerText={ 'Albums' }/>
+        <View style={{ flex: 1}}>
+            <Header headerText={'Albums'}/>
             <AlbumList/>
         </View>
     );
@@ -17,3 +17,5 @@ const App = () => {
 
 // Render it to the device
 AppRegistry.registerComponent('Albums', () => App);
+
+//helps the scrollView to be complete => style flex in view
